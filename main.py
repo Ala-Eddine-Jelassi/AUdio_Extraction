@@ -2,6 +2,9 @@ import streamlit as st
 from moviepy.editor  import VideoFileClip
 import os
 import shutil
+
+
+
 st.title("Audio Extractor")
 
 video = st.file_uploader("upload your video",type=["mp3","mp4","mov"])
@@ -101,3 +104,9 @@ try :
                            mime="audio/mp3")
 except Exception as e :
     st.write('Please upload you file')
+col1,col2 = st.columns(2)
+
+with col1:
+    st.video("https://youtu.be/Xiom_UqPqow?si=g3-i5GpId7WiuhKZ",autoplay=True)
+with col2:
+    st.video("https://youtu.be/q0feWYovr3s?si=Tfqhbu2Ghd3gWeNg")
