@@ -1,3 +1,2 @@
-moviepy
-os 
-shutil
+moviepy==1.0.3
+streamlit==1.39.0
